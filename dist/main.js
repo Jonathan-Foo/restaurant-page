@@ -10,23 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/content.js":
+/*!************************!*\
+  !*** ./src/content.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\nfunction createContentSection() {\n    const contentDiv = document.createElement('div')\n    contentDiv.classList.add('content')\n\n    contentDiv.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n    return document.body.appendChild(contentDiv)\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createContentSection);\n\n//# sourceURL=webpack://restaurant-page/./src/content.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHomeSection)\n/* harmony export */ });\n\nfunction createHomeSection() {\n    const homeContainer = document.createElement('div')\n    const logo = document.createElement('p')\n    const subText = document.createElement('p')\n    const credit = document.createElement('p')\n\n    homeContainer.classList.add('home')\n    homeContainer.classList.add('active')\n    homeContainer.setAttribute('id', 'home')\n\n    logo.classList.add('logo')\n    logo.textContent = 'Kyoto Sushi'\n    \n    subText.classList.add('sub-text')\n    subText.textContent = 'the true authentic omakase experience'\n    \n    credit.classList.add('credit')\n    credit.textContent = 'photograph by Evan Sung'\n\n    homeContainer.appendChild(logo)\n    homeContainer.appendChild(subText)\n    homeContainer.appendChild(credit)\n\n    return homeContainer\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _sidebar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sidebar */ \"./src/sidebar.js\");\n\n\n\n\n(0,_sidebar__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n// pageLoad();\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/pageLoad.js":
-/*!*************************!*\
-  !*** ./src/pageLoad.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ content)\n/* harmony export */ });\nfunction content() {\n    const sideBar = document.createElement('div');\n    const content = document.createElement('div');\n\n    sideBar.innerHTML = \"test\"\n    content.innerHTML = \"test\"\n\n    sideBar.classList.add('sidebar')\n    content.classList.add('content') \n\n    console.log(sideBar, content)\n\n\n    return document.body.appendChild(sideBar);\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sidebar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sidebar */ \"./src/sidebar.js\");\n/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./content */ \"./src/content.js\");\n\n\n\n\n(0,_sidebar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_content__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 

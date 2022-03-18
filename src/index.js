@@ -1,7 +1,6 @@
-import pageLoad from "./pageLoad";
 import sidebar from "./sidebar";
+import createContentSection from './content'
 
 
 sidebar();
-// pageLoad();
-
+createContentSection();
