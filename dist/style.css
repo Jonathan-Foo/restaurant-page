@@ -126,7 +126,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("./img/bg-img/HERO_Sushi_Nakazawa_Smoked_Salmon_Evan_Sung.jpg");
+  background: url("./img/bg-img/home-bg.jpg");
   opacity: 0;
   transition: 200ms ease-in-out;
   pointer-events: none;
@@ -156,7 +156,7 @@ ul {
 .menu {
   color: white;
   position: absolute;
-  background: url("./img/bg-img/masaki-saito-1024x683.png");
+  background: url("./img/bg-img/menu-bg.png");
   opacity: 0;
   pointer-events: none;
   background-repeat: no-repeat;
@@ -243,7 +243,7 @@ ul {
   align-items: center;
   color: white;
   position: absolute;
-  background: url("img/bg-img/bay-nine-omakase-162085-2.png");
+  background: url("img/bg-img/contact-bg.png");
   opacity: 0;
   pointer-events: none;
   background-repeat: no-repeat;

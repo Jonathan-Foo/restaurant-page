@@ -6,7 +6,7 @@ export default function createHomeSection() {
     const credit = document.createElement('p')
 
     homeContainer.classList.add('home')
-    homeContainer.classList.add('active')
+    // homeContainer.classList.add('active')
     homeContainer.setAttribute('id', 'home')
 
     logo.classList.add('logo')
