@@ -1,7 +1,7 @@
 function createMenuSection() {
     const menuContainer = document.createElement('div')  
     menuContainer.classList.add('menu')
-    menuContainer.classList.add('active')
+    // menuContainer.classList.add('active')
     menuContainer.setAttribute('id', 'menu')
 
     menuContainer.appendChild(omakaseSectionCreator())
