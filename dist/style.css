@@ -15,7 +15,7 @@ body {
   font-family: "OptimusPrinceps";
   display: grid;
   grid-template-columns: 20% 1fr;
-  background: white;
+  background: black;
 }
 
 ul {
