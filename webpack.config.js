@@ -4,10 +4,10 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        pageLoad: './src/pageLoad.js',
+        
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {

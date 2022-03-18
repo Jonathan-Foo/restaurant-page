@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "OptimusPrinceps";
+  src: url(font/OptimusPrinceps.ttf);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "OptimusPrinceps";
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  background: white;
+}
+
+ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/* SIDEBAR STYLING */
+
+.side-navbar {
+  background: black;
+  color: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  min-height: 100vh;
+}
+
+.sidebar-logo {
+  font-size: 3em;
+  margin-top: 0.6em;
+}
+
+.sidebar-logo-line {
+  width: 270px;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 10em;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  font-size: 2em;
+}
+
+.tab {
+  position: relative;
+  transition: 200ms ease-in-out;
+}
+
+.tab:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px white;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab > span {
+  transition: 200ms ease-in-out;
+  background-color: white;
+  width: 0;
+  height: 1px;
+}
+
+.tab.home-tab:hover > span,
+.tab.menu-tab:hover > span,
+.tab.contact-tab:hover > span {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px white;
+}
+
+.tab.home-tab > span.active,
+.tab.home-tab:hover > span {
+  width: 95px;
+}
+
+.tab.menu-tab > span.active,
+.tab.menu-tab:hover > span {
+  width: 90px;
+}
+
+.tab.contact-tab > span.active,
+.tab.contact-tab:hover > span {
+  width: 130px;
+}
+
+.copyright {
+  display: flex;
+  gap: 0.5em;
+  position: absolute;
+  bottom: 1em;
+}
+
+.copyright > a {
+  color: white;
+}
+
+/* RIGT CONTENT SECTION STYLING */
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+/* HOME SLIDE */
+.home {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("./img/bg-img/HERO_Sushi_Nakazawa_Smoked_Salmon_Evan_Sung.jpg");
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.home.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.logo {
+  margin-top: 10px;
+  font-size: 5em;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0.2em;
+  right: 1em;
+}
+
+/* MENU SLIDE */
+.menu {
+  color: white;
+  position: absolute;
+  background: url("./img/bg-img/masaki-saito-1024x683.png");
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  overflow: auto;
+  transition: 200ms ease-in-out;
+}
+
+.menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.omakase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.omakase-title {
+  font-size: 2em;
+  margin-block: 0.5em;
+  text-shadow: 0 0 10px black;
+}
+
+.nigiri-set {
+  padding: 1em 1.5em;
+  width: 90%;
+  /* height: 45em; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  align-items: center;
+  gap: 2.5em 1em;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px black;
+}
+
+.nigiri {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  transition: 200ms ease-in-out;
+}
+
+.nigiri:hover {
+  transform: scale(1.01);
+}
+
+.nigiri > img {
+  width: 40%;
+  height: auto;
+  box-shadow: 2px 2px 10px black;
+}
+
+.nigiri-name {
+  font-size: 2.2em;
+  text-shadow: 0 0 15px black;
+}
+
+.nigiri-description {
+  font-size: 1.3em;
+  text-shadow: 0 0 5px black;
+}
+
+.photo-credit {
+  position: absolute;
+  font-size: 1em;
+  right: 10px;
+  bottom: 10px;
+  text-shadow: 0 0 5px black;
+}
+
+/* CONTACT SLIDE */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  background: url("img/bg-img/bay-nine-omakase-162085-2.png");
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+.contact.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 10em;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 10px black;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-shadow: 0 0 10px black;
+  transition: 200ms ease-in-out;
+  transform: scale(1);
+}
+
+.contact-info:hover {
+  transform: scale(1.02);
+  text-shadow: 0 0 10px white;
+}
+
+.map {
+  width: 70%;
+  transition: 200ms ease-in-out;
+  transform: scale(1);
+}
+
+.map:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px white;
+}

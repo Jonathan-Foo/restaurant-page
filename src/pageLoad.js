@@ -1,21 +1,16 @@
-import './style.css';
-
 export default function content() {
-    const div = document.createElement('div');
-    const paragraph = document.createElement('p')
-    const heading = document.createElement('h1');
-    const content = document.getElementById('content');
+    const sideBar = document.createElement('div');
+    const content = document.createElement('div');
 
-    heading.textContent = "Al Fonzo's Pizzeria";
-    heading.classList.add('heading')
-    paragraph.textContent = "Customer Review 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, sunt nemo quos animi impedit rem maxime ullam alias atque consequatur."
-    
-    div.appendChild(paragraph)
+    sideBar.innerHTML = "test"
+    content.innerHTML = "test"
 
-    content.appendChild(heading);
-    content.appendChild(div);
-    
+    sideBar.classList.add('sidebar')
+    content.classList.add('content') 
 
-    return content
+    console.log(sideBar, content)
+
+
+    return document.body.appendChild(sideBar);
 }
 

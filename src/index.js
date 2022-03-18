@@ -1,5 +1,7 @@
 import pageLoad from "./pageLoad";
+import sidebar from "./sidebar";
 
-window.onload = pageLoad();
 
-document.body.appendChild(content);
+sidebar();
+// pageLoad();
+
