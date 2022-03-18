@@ -1,0 +1,7 @@
+.heading {
+  color: gold;
+  text-shadow: 3px 0 rgb(163, 87, 16);
+  background: linear-gradient(green, white, red);
+  text-align: center;
+  font-size: 50px;
+}
